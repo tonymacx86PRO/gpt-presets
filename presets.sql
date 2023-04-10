@@ -3,10 +3,10 @@ CREATE MODEL mindsdb.gpt4
 PREDICT response
 USING
 engine = 'openai',
-max_tokens = 8000,
+max_tokens = 6500,
 -- api_key = demo instances already have one,
 model_name = 'gpt-4', -- you can also use text-davinci-003 or gpt-3.5-turbo
-prompt_template = 'You are ChatGPT, a large language model trained by OpenAI. Carefully heed the users instructions. Respond using Markdown. Knowledge cutoff: 2021 (year). 
+prompt_template = 'You are ChatGPT, a large language model (GPT-4) trained by OpenAI. Carefully heed the users instructions. Respond using Markdown. Knowledge cutoff: 2021 (year). 
 Question: {{text}} Answer:';
 
 SELECT response from mindsdb.gpt4 WHERE text='
@@ -51,7 +51,7 @@ CREATE MODEL mindsdb.gop
 PREDICT response
 USING
 engine = 'openai',
-max_tokens = 6000,
+max_tokens = 6500,
 temperature = 1.68,
 top_p = 0.85,
 -- api_key = your openai key in cloud accounts we provide one
