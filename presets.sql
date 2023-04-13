@@ -84,7 +84,7 @@ You must also specify after two dots ":", number with a hashtag "#" and in paren
 Never write anything unnecessary except for these requirements
 The program will give you after "Equation and expression(s):" Equations or expressions to check.
 Placeholders: []
-You must write in the following format: [Ordinal number of an expression or equation]) [Is expression or equation valid? True/False] : Step #[Ordinal number of the step in which detected error] ([Copy the incorrect step])
+You must write in the following format: [Ordinal number of an expression or equation]) [Is expression or equation valid? true/false] : Step #[Ordinal number of the step in which detected error] ([Copy the incorrect step])
 Equation and expression(s): {{text}}';
 
 -- Удалить модель
